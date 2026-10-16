@@ -16,7 +16,6 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: darkGreen,
         foregroundColor: Colors.white,
-
         title: Row(
           children: [
             Container(
@@ -27,9 +26,7 @@ class HomePage extends StatelessWidget {
               ),
               child: Icon(Icons.travel_explore, color: darkGreen, size: 25),
             ),
-
             SizedBox(width: 10),
-
             Text(
               'CampusFind',
               style: GoogleFonts.poppins(
@@ -39,7 +36,6 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-
         actions: [
           IconButton(
             onPressed: () {},
@@ -49,7 +45,6 @@ class HomePage extends StatelessWidget {
               color: limeGreen,
             ),
           ),
-
           SizedBox(width: 8),
         ],
       ),
@@ -75,9 +70,7 @@ class HomePage extends StatelessWidget {
                       size: 28,
                     ),
                   ),
-
                   SizedBox(width: 12),
-
                   Text(
                     'CampusFind',
                     style: GoogleFonts.poppins(
@@ -92,117 +85,77 @@ class HomePage extends StatelessWidget {
 
             SizedBox(height: 12),
 
-            InkWell(
-              onTap: () {},
-              child: Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(18),
-                child: Row(
-                  children: [
-                    Icon(Icons.home_rounded, color: darkGreen, size: 25),
-                    SizedBox(width: 15),
-                    Text(
-                      'Home',
-                      style: GoogleFonts.poppins(
-                        fontSize: 17,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ],
+            ListTile(
+              leading: Icon(Icons.home_rounded, color: darkGreen, size: 25),
+              title: Text(
+                'Home',
+                style: GoogleFonts.poppins(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
+              contentPadding: const EdgeInsets.symmetric(horizontal: 18),
+              onTap: () {},
             ),
 
             Divider(color: Colors.grey.shade300),
 
-            InkWell(
-              onTap: () {},
-              child: Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(18),
-                child: Row(
-                  children: [
-                    Icon(Icons.search_rounded, color: darkGreen, size: 25),
-                    SizedBox(width: 15),
-                    Text(
-                      'Lost Items',
-                      style: GoogleFonts.poppins(fontSize: 17),
-                    ),
-                  ],
-                ),
+            ListTile(
+              leading: Icon(Icons.search_rounded, color: darkGreen, size: 25),
+              title: Text(
+                'Lost Items',
+                style: GoogleFonts.poppins(fontSize: 17),
               ),
+              contentPadding: const EdgeInsets.symmetric(horizontal: 18),
+              onTap: () {},
             ),
 
             Divider(color: Colors.grey.shade300),
 
-            InkWell(
-              onTap: () {},
-              child: Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(18),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.check_circle_outline_rounded,
-                      color: darkGreen,
-                      size: 25,
-                    ),
-                    SizedBox(width: 15),
-                    Text(
-                      'Found Items',
-                      style: GoogleFonts.poppins(fontSize: 17),
-                    ),
-                  ],
-                ),
+            ListTile(
+              leading: Icon(
+                Icons.check_circle_outline_rounded,
+                color: darkGreen,
+                size: 25,
               ),
+              title: Text(
+                'Found Items',
+                style: GoogleFonts.poppins(fontSize: 17),
+              ),
+              contentPadding: const EdgeInsets.symmetric(horizontal: 18),
+              onTap: () {},
             ),
 
             Divider(color: Colors.grey.shade300),
 
-            InkWell(
-              onTap: () {},
-              child: Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(18),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.add_circle_outline_rounded,
-                      color: darkGreen,
-                      size: 25,
-                    ),
-                    SizedBox(width: 15),
-                    Text(
-                      'Report an Item',
-                      style: GoogleFonts.poppins(fontSize: 17),
-                    ),
-                  ],
-                ),
+            ListTile(
+              leading: Icon(
+                Icons.add_circle_outline_rounded,
+                color: darkGreen,
+                size: 25,
               ),
+              title: Text(
+                'Report an Item',
+                style: GoogleFonts.poppins(fontSize: 17),
+              ),
+              contentPadding: const EdgeInsets.symmetric(horizontal: 18),
+              onTap: () {},
             ),
 
             Divider(color: Colors.grey.shade300),
 
-            InkWell(
-              onTap: () {},
-              child: Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(18),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.notifications_none_rounded,
-                      color: darkGreen,
-                      size: 25,
-                    ),
-                    SizedBox(width: 15),
-                    Text(
-                      'Notifications',
-                      style: GoogleFonts.poppins(fontSize: 17),
-                    ),
-                  ],
-                ),
+            ListTile(
+              leading: Icon(
+                Icons.notifications_none_rounded,
+                color: darkGreen,
+                size: 25,
               ),
+              title: Text(
+                'Notifications',
+                style: GoogleFonts.poppins(fontSize: 17),
+              ),
+              contentPadding: const EdgeInsets.symmetric(horizontal: 18),
+              onTap: () {},
             ),
           ],
         ),
@@ -297,39 +250,36 @@ class HomePage extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(16),
+                  child: ListTile(
                     onTap: () {},
-                    child: Padding(
-                      padding: const EdgeInsets.all(14),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Icon(Icons.headphones, size: 38, color: darkGreen),
-                          SizedBox(height: 10),
-                          Text(
-                            'Wireless Headphones',
-                            style: GoogleFonts.poppins(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
+                    contentPadding: const EdgeInsets.all(14),
+                    title: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(Icons.headphones, size: 38, color: darkGreen),
+                        SizedBox(height: 10),
+                        Text(
+                          'Wireless Headphones',
+                          style: GoogleFonts.poppins(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
                           ),
-                          SizedBox(height: 6),
-                          Text(
-                            'LOST',
-                            style: GoogleFonts.poppins(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.red,
-                            ),
+                        ),
+                        SizedBox(height: 6),
+                        Text(
+                          'LOST',
+                          style: GoogleFonts.poppins(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.red,
                           ),
-                          SizedBox(height: 6),
-                          Text(
-                            'Central Library',
-                            style: GoogleFonts.poppins(fontSize: 14),
-                          ),
-                        ],
-                      ),
+                        ),
+                        SizedBox(height: 6),
+                        Text(
+                          'Central Library',
+                          style: GoogleFonts.poppins(fontSize: 14),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -344,39 +294,36 @@ class HomePage extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(16),
+                  child: ListTile(
                     onTap: () {},
-                    child: Padding(
-                      padding: const EdgeInsets.all(14),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Icon(Icons.badge, size: 38, color: darkGreen),
-                          SizedBox(height: 10),
-                          Text(
-                            'Student ID Card',
-                            style: GoogleFonts.poppins(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
+                    contentPadding: const EdgeInsets.all(14),
+                    title: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(Icons.badge, size: 38, color: darkGreen),
+                        SizedBox(height: 10),
+                        Text(
+                          'Student ID Card',
+                          style: GoogleFonts.poppins(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
                           ),
-                          SizedBox(height: 6),
-                          Text(
-                            'FOUND',
-                            style: GoogleFonts.poppins(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.green,
-                            ),
+                        ),
+                        SizedBox(height: 6),
+                        Text(
+                          'FOUND',
+                          style: GoogleFonts.poppins(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green,
                           ),
-                          SizedBox(height: 6),
-                          Text(
-                            'CSE Building',
-                            style: GoogleFonts.poppins(fontSize: 14),
-                          ),
-                        ],
-                      ),
+                        ),
+                        SizedBox(height: 6),
+                        Text(
+                          'CSE Building',
+                          style: GoogleFonts.poppins(fontSize: 14),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -397,39 +344,36 @@ class HomePage extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(16),
+                  child: ListTile(
                     onTap: () {},
-                    child: Padding(
-                      padding: const EdgeInsets.all(14),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Icon(Icons.key, size: 38, color: darkGreen),
-                          SizedBox(height: 10),
-                          Text(
-                            'Keys and Keyring',
-                            style: GoogleFonts.poppins(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
+                    contentPadding: const EdgeInsets.all(14),
+                    title: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(Icons.key, size: 38, color: darkGreen),
+                        SizedBox(height: 10),
+                        Text(
+                          'Keys and Keyring',
+                          style: GoogleFonts.poppins(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
                           ),
-                          SizedBox(height: 6),
-                          Text(
-                            'FOUND',
-                            style: GoogleFonts.poppins(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.green,
-                            ),
+                        ),
+                        SizedBox(height: 6),
+                        Text(
+                          'FOUND',
+                          style: GoogleFonts.poppins(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green,
                           ),
-                          SizedBox(height: 6),
-                          Text(
-                            'University Cafeteria',
-                            style: GoogleFonts.poppins(fontSize: 14),
-                          ),
-                        ],
-                      ),
+                        ),
+                        SizedBox(height: 6),
+                        Text(
+                          'University Cafeteria',
+                          style: GoogleFonts.poppins(fontSize: 14),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -444,39 +388,36 @@ class HomePage extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(16),
+                  child: ListTile(
                     onTap: () {},
-                    child: Padding(
-                      padding: const EdgeInsets.all(14),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Icon(Icons.water_drop, size: 38, color: darkGreen),
-                          SizedBox(height: 10),
-                          Text(
-                            'Water Bottle',
-                            style: GoogleFonts.poppins(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
+                    contentPadding: const EdgeInsets.all(14),
+                    title: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(Icons.water_drop, size: 38, color: darkGreen),
+                        SizedBox(height: 10),
+                        Text(
+                          'Water Bottle',
+                          style: GoogleFonts.poppins(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
                           ),
-                          SizedBox(height: 6),
-                          Text(
-                            'LOST',
-                            style: GoogleFonts.poppins(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.red,
-                            ),
+                        ),
+                        SizedBox(height: 6),
+                        Text(
+                          'LOST',
+                          style: GoogleFonts.poppins(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.red,
                           ),
-                          SizedBox(height: 6),
-                          Text(
-                            'Campus Playground',
-                            style: GoogleFonts.poppins(fontSize: 14),
-                          ),
-                        ],
-                      ),
+                        ),
+                        SizedBox(height: 6),
+                        Text(
+                          'Campus Playground',
+                          style: GoogleFonts.poppins(fontSize: 14),
+                        ),
+                      ],
                     ),
                   ),
                 ),
